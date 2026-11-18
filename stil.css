@@ -69,6 +69,7 @@ details p{margin:10px 0 4px}
 .upsell-kopf{background:var(--gruen);color:var(--creme);padding:34px 0 26px;text-align:center}
 .upsell-kopf h1{color:var(--creme)}
 .upsell-kopf .schritt{display:inline-block;background:var(--gold);color:#1f2a22;font-weight:600;font-size:14px;padding:4px 12px;border-radius:99px;margin-bottom:14px}
+.upsell-knopf{display:flex;justify-content:center;margin:8px 0 4px;min-height:60px}
 .nein-link{display:block;text-align:center;margin:14px 0 6px;color:var(--grau);font-size:16px}
 
 /* Unterseiten */
