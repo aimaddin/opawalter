@@ -1,0 +1,85 @@
+@font-face{font-family:"Lora";font-weight:400;font-style:normal;font-display:swap;src:url(Lora-400.ttf) format("truetype")}
+@font-face{font-family:"Lora";font-weight:400;font-style:italic;font-display:swap;src:url(Lora-400-italic.ttf) format("truetype")}
+@font-face{font-family:"Lora";font-weight:600;font-style:normal;font-display:swap;src:url(Lora-600.ttf) format("truetype")}
+@font-face{font-family:"Playfair Display";font-weight:500;font-style:normal;font-display:swap;src:url(Playfair-500.ttf) format("truetype")}
+
+:root{
+  --gruen:#2E4A3B; --gruen-dunkel:#22382c; --gold:#C29A5B; --gold-hell:#E8D3AE;
+  --creme:#FBF8F1; --papier:#F3EEE2; --tinte:#2B2A26; --grau:#6F6A5F; --linie:#E2DCCB;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--creme);color:var(--tinte);font-family:"Lora",Georgia,serif;font-size:18px;line-height:1.6}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--gruen)}
+.huelle{max-width:760px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:500;color:var(--gruen);line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(30px,6vw,46px)}
+h2{font-size:clamp(25px,4.6vw,34px);margin-top:1.6em}
+h3{font-size:22px}
+p{margin:0 0 1em}
+.marke{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 14px}
+
+/* Kopf */
+.kopf{background:var(--gruen);color:var(--creme);padding:44px 0 0}
+.kopf h1{color:var(--creme)}
+.kopf .unter{font-size:19px;color:#E9E3D3;margin-bottom:22px}
+.kopf ul{margin:0 0 26px;padding:0;list-style:none}
+.kopf li{padding:6px 0 6px 30px;position:relative;color:#F1ECDF}
+.kopf li::before{content:"";position:absolute;left:4px;top:15px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
+.kopf .bild{margin-top:10px;border-radius:14px 14px 0 0;overflow:hidden}
+
+/* Knopf */
+.knopf{display:inline-block;background:var(--gold);color:#1f2a22;text-decoration:none;font-weight:600;font-size:19px;
+  padding:16px 26px;border-radius:12px;box-shadow:0 3px 0 #9c7a43;text-align:center;line-height:1.3}
+.knopf:hover,.knopf:focus-visible{background:#d0aa6c}
+.knopf:focus-visible{outline:3px solid var(--creme);outline-offset:3px}
+.knopf-zeile{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:6px 0 30px}
+.preis{font-size:22px;font-weight:600}
+.preis small{font-size:14px;font-weight:400;color:inherit;opacity:.8}
+
+/* Abschnitte */
+section{padding:12px 0 24px}
+.einstieg p:first-child{font-size:20px}
+.tabelle{width:100%;border-collapse:collapse;margin:8px 0 10px;font-size:16px}
+.tabelle th,.tabelle td{text-align:left;vertical-align:top;padding:12px 10px;border-bottom:1px solid var(--linie)}
+.tabelle th{font-family:"Playfair Display",Georgia,serif;font-weight:500;color:var(--gruen);font-size:17px;width:34%}
+.tabelle td .umfang{display:block;font-size:14px;color:var(--grau);margin-bottom:2px}
+.punkte{padding-left:0;list-style:none;margin:0 0 1em}
+.punkte li{padding:6px 0 6px 30px;position:relative}
+.punkte li::before{content:"✓";position:absolute;left:4px;top:5px;color:var(--gruen);font-weight:600}
+.punkte.nein li::before{content:"–";color:var(--grau)}
+.kasten{background:var(--papier);border:1px solid var(--linie);border-radius:14px;padding:22px 22px 8px;margin:10px 0 20px}
+.angebot{background:#fff;border:2px solid var(--gold);border-radius:16px;padding:24px;margin:16px 0 26px}
+.angebot .knopf{width:100%}
+.angebot .preis{display:block;font-size:30px;color:var(--gruen);margin:6px 0 14px}
+.angebot ul{margin-top:0}
+details{border-bottom:1px solid var(--linie);padding:12px 0}
+summary{cursor:pointer;font-weight:600;list-style-position:outside}
+details p{margin:10px 0 4px}
+.hinweis{font-size:15px;color:var(--grau)}
+.zitat{border-left:4px solid var(--gold);padding:4px 0 4px 18px;font-style:italic;margin:0 0 1.2em}
+
+/* Fuß */
+.fuss{background:var(--gruen-dunkel);color:#CFC8B6;font-size:15px;padding:26px 0 34px;margin-top:20px}
+.fuss a{color:#EFE8D8}
+.fuss nav{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:8px}
+
+/* Upsell */
+.upsell-kopf{background:var(--gruen);color:var(--creme);padding:34px 0 26px;text-align:center}
+.upsell-kopf h1{color:var(--creme)}
+.upsell-kopf .schritt{display:inline-block;background:var(--gold);color:#1f2a22;font-weight:600;font-size:14px;padding:4px 12px;border-radius:99px;margin-bottom:14px}
+.nein-link{display:block;text-align:center;margin:14px 0 6px;color:var(--grau);font-size:16px}
+
+/* Unterseiten */
+.einfach{padding:40px 0}
+.einfach h1{font-size:34px}
+
+@media (max-width:560px){
+  body{font-size:17px}
+  .tabelle th{width:auto;display:block;border-bottom:0;padding-bottom:2px}
+  .tabelle td{display:block;padding-top:0}
+  .tabelle tr{display:block;border-bottom:1px solid var(--linie);padding:8px 0}
+  .tabelle th,.tabelle td{border-bottom:0}
+  .knopf{width:100%}
+}
