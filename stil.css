@@ -1,7 +1,7 @@
-@font-face{font-family:"Lora";font-weight:400;font-style:normal;font-display:swap;src:url(Lora-400.ttf) format("truetype")}
-@font-face{font-family:"Lora";font-weight:400;font-style:italic;font-display:swap;src:url(Lora-400-italic.ttf) format("truetype")}
-@font-face{font-family:"Lora";font-weight:600;font-style:normal;font-display:swap;src:url(Lora-600.ttf) format("truetype")}
-@font-face{font-family:"Playfair Display";font-weight:500;font-style:normal;font-display:swap;src:url(Playfair-500.ttf) format("truetype")}
+@font-face{font-family:"Lora";font-weight:400;font-style:normal;font-display:swap;src:url(fonts/Lora-400.ttf) format("truetype")}
+@font-face{font-family:"Lora";font-weight:400;font-style:italic;font-display:swap;src:url(fonts/Lora-400-italic.ttf) format("truetype")}
+@font-face{font-family:"Lora";font-weight:600;font-style:normal;font-display:swap;src:url(fonts/Lora-600.ttf) format("truetype")}
+@font-face{font-family:"Playfair Display";font-weight:500;font-style:normal;font-display:swap;src:url(fonts/Playfair-500.ttf) format("truetype")}
 
 :root{
   --gruen:#2E4A3B; --gruen-dunkel:#22382c; --gold:#C29A5B; --gold-hell:#E8D3AE;
@@ -94,6 +94,8 @@ details p{margin:10px 0 4px}
 .menue-liste{display:flex;gap:2px;list-style:none;margin:0;padding:0}
 .menue-liste a{display:block;padding:8px 10px;color:#EFE8D8;text-decoration:none;font-size:16px;border-radius:8px}
 .menue-liste a:hover{background:rgba(255,255,255,.08);color:#fff}
+.menue-liste a{white-space:nowrap}
+@media (min-width:1061px) and (max-width:1180px){.menue{gap:10px}.menue-liste a{padding:8px 6px;font-size:15px}.menue-liste a.login{padding:6px 12px;margin-left:4px}.logo{font-size:18px}}
 .menue-liste a[aria-current="page"]{color:var(--gold-hell);box-shadow:inset 0 -2px 0 var(--gold);border-radius:8px 8px 0 0}
 .menue-liste a:focus-visible,.sozial a:focus-visible,.menue-knopf:focus-visible,.logo:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .sozial{display:flex;gap:4px;list-style:none;margin:0;padding:0}
@@ -102,7 +104,7 @@ details p{margin:10px 0 4px}
 .sozial svg{width:20px;height:20px;fill:currentColor}
 .menue-knopf{display:none}
 .fuss .sozial{margin:0 0 12px -10px}
-@media (max-width:900px){
+@media (max-width:1060px){
   .logo{font-size:18px}
   .menue-knopf{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 14px;background:transparent;color:var(--creme);border:1px solid rgba(232,211,174,.55);border-radius:99px;font:600 16px "Lora",Georgia,serif;cursor:pointer}
   .menue-knopf svg{width:20px;height:20px}
@@ -123,4 +125,5 @@ details p{margin:10px 0 4px}
 /* Login-Punkt im Menü hervorheben */
 .menue-liste a.login{border:1px solid rgba(232,211,174,.55);border-radius:99px;padding:7px 16px;margin-left:6px}
 .menue-liste a.login:hover{background:var(--gold);color:#1f2a22;border-color:var(--gold)}
-@media (max-width:900px){.menue-liste a.login{border:0;border-bottom:1px solid rgba(255,255,255,.08);border-radius:0;margin:0;padding:14px 4px;color:var(--gold-hell)}}
+@media (min-width:1061px) and (max-width:1180px){.menue-liste a.login{padding:6px 12px;margin-left:4px}}
+@media (max-width:1060px){.menue-liste a.login{border:0;border-bottom:1px solid rgba(255,255,255,.08);border-radius:0;margin:0;padding:14px 4px;color:var(--gold-hell)}}
